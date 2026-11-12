@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #eaf4ff 0%, #f6f7fb 100%);
+    color: #1b1b1b;
+}
+
+.page-shell {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.resume-card {
+    width: min(760px, 100%);
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 18px 35px rgba(46, 76, 122, 0.12);
+    padding: 36px;
+}
+
+.topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    border-bottom: 2px solid #dfeaff;
+    padding-bottom: 22px;
+    margin-bottom: 18px;
+}
+
+.eyebrow {
+    margin: 0 0 8px;
+    font-size: 0.75rem;
+    letter-spacing: 0.12rem;
+    text-transform: uppercase;
+    color: #4b6cb7;
+    font-weight: bold;
+}
+
+h1 {
+    margin: 0;
+    font-size: clamp(2rem, 4vw, 3rem);
+    color: #173f73;
+}
+
+.gender-badge {
+    background: #eaf4ff;
+    color: #173f73;
+    font-weight: bold;
+    border-radius: 999px;
+    padding: 12px 18px;
+}
+
+.summary {
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 10px 24px;
+}
+
+h2 {
+    color: #173f73;
+    margin-top: 30px;
+    margin-bottom: 14px;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills-list li {
+    background: #f0f5ff;
+    color: #193a77;
+    border: 1px solid #d5e3ff;
+    border-radius: 999px;
+    padding: 8px 14px;
+    font-weight: 600;
+}
+
+.education-item {
+    background: #fafcff;
+    border-left: 4px solid #6aa7ff;
+    padding: 12px 16px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+}
+
+.education-item h3 {
+    margin: 0 0 6px;
+    color: #1d3557;
+}
+
+.education-item p {
+    margin: 0;
+    color: #3a4d63;
+}

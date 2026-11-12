@@ -1,0 +1,47 @@
+{% extends 'resume_app/base.html' %}
+
+{% block title %}{{ resume.name }} Resume{% endblock %}
+
+{% block content %}
+<div class="resume-card">
+    <header class="topbar">
+        <div>
+            <p class="eyebrow">Professional Profile</p>
+            <h1>{{ resume.name }}</h1>
+        </div>
+        <div class="gender-badge">
+            {% if resume.gender == 'male' %}
+                👨 Male
+            {% elif resume.gender == 'female' %}
+                👩 Female
+            {% else %}
+                🧑 Other
+            {% endif %}
+        </div>
+    </header>
+
+    <section class="summary">
+        <p><strong>Age:</strong> {{ resume.age }}</p>
+        <p><strong>Email:</strong> {{ resume.email }}</p>
+    </section>
+
+    <section>
+        <h2>Skills</h2>
+        <ul class="skills-list">
+            {% for skill in resume.skills %}
+                <li>{{ skill }}</li>
+            {% endfor %}
+        </ul>
+    </section>
+
+    <section>
+        <h2>Education</h2>
+        {% for item in resume.education %}
+            <div class="education-item">
+                <h3>{{ item.degree }}</h3>
+                <p>{{ item.institution }} | {{ item.year }}</p>
+            </div>
+        {% endfor %}
+    </section>
+</div>
+{% endblock %}
