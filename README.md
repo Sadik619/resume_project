@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Static Resume Web Application Using Django
 
 This project is a simple Django-based resume website that displays personal information from a Python dictionary in a dynamic HTML template. The application demonstrates the required Django features for a beginner-to-intermediate assignment, including URL routing, view context handling, template inheritance, loops, conditionals, and static file support.
@@ -13,3 +14,6 @@ The main challenge was organizing the template structure correctly while making 
 ## Outcome
 
 The final result is a polished one-page resume page styled with CSS and rendered through Django templates. This project reinforces the fundamentals of Django: project setup, app creation, view-to-template communication, and using the template language to present data dynamically.
+=======
+# resume_project
+>>>>>>> 2a2683cd771e55c5951ea5cffb74c538ee1672d7
